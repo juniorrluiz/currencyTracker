@@ -181,6 +181,28 @@ footer {
   font-weight: 300;
 }
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--notification);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--notification);
+  border-radius: 10px;
+}
+
+
 @keyframes notification {
   0% {
     box-shadow: 0 0 5px 2px var(--notification);
