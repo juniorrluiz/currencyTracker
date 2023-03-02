@@ -7,11 +7,11 @@
 :root {
   --text-color-primary: #fff;
   --text-color-secondary: #d9d9d9;
+  --text-color-tertiary: #a7b2c3;
   --background: #030304;
   --notification: #00bc4f;
   --line: #474747;
   --card-background: #202025;
-  
 }
 
 body {
@@ -56,8 +56,8 @@ li {
   list-style: none;
 }
 
-li:hover{
-  border-bottom:1px solid var(--notification);
+li:hover {
+  border-bottom: 0.0625rem solid var(--notification);
 }
 
 header {
@@ -118,13 +118,67 @@ header figure {
 }
 
 .notification {
-  top: 0;
-  left: 0;
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   background-color: var(--notification);
   border-radius: 50%;
   animation: notification 2s infinite;
+}
+
+.dados {
+  margin: 2.5rem 0;
+}
+
+section h3 {
+  font-weight: 300;
+  font-size: 0.75rem;
+}
+
+.line {
+  border-bottom: 0.0313rem solid var(--line);
+  margin: 0.5rem 0;
+}
+
+.dados-content {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.cards {
+  background-color: var(--card-background);
+  border-radius: 0.1875rem;
+  border: 0.0238rem solid var(--line);
+  padding: 0.625rem 0.75rem;
+  width: 100%;
+  gap: 0.625rem;
+  display: flex;
+  align-items: center;
+}
+
+.cards div {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards img {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+.cards .card-title {
+  font-size: 0.75rem;
+  color: var(--text-color-secondary);
+}
+
+.cards .card-value {
+  font-size: 0.75rem;
+  color: var(--text-color-tertiary);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
 }
 
 @keyframes notification {
