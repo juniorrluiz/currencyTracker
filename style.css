@@ -9,6 +9,9 @@
   --text-color-secondary: #d9d9d9;
   --background: #030304;
   --notification: #00bc4f;
+  --line: #474747;
+  --card-background: #202025;
+  
 }
 
 body {
@@ -51,6 +54,10 @@ nav ul img {
 
 li {
   list-style: none;
+}
+
+li:hover{
+  border-bottom:1px solid var(--notification);
 }
 
 header {
